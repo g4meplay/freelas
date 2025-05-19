@@ -55,3 +55,6 @@ htmlcov/
 
 # Editor backups
 *~
+
+# Ignore environment variable files
+.env

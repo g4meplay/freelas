@@ -3,6 +3,10 @@ package-mode = false
 packages = [{include = "freelas", from = "src"}]
 
 
+[tool.poetry.group.dev.dependencies]
+python-dotenv = "^1.1.0"
+
+
 [project]
 name = "freelas"
 version = "0.1.0"
