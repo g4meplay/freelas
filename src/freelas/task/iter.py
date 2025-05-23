@@ -14,6 +14,9 @@ async def iter():
     page = 1
     bid = await get_usd_brl_bid()
     while True:
+        if page > 30:
+            break
+
         print(f"Page: {page}")
         workana_response = await Client.get(f"{WORKANA_JOBS}&page={page}")
         print(f"Workana status-code: {workana_response.status_code}")
